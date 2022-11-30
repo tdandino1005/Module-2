@@ -1,96 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header><nav>
-        <ul>
-            <li>
-            </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        </ul>
-    </nav></header>
-    <main>
-        <h1>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Food Finder</title>
+  </head>
 
-        </h1>
-    </main>
-
-<img src="images/Tony Picture.jpg" alt="min-width; 200px">
-
-<body>
-    <header class="header">
-        <h1>Tony Dandino</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="resume.html">Resume</a>
-                </li>
-            </ul>
-        </nav>
+  <body class="bg-yellow-100">
+    <header
+      class="bg-gradient-to-r from-amber-500 to-amber-900 p-5 text-center text-6xl font-bold tracking-wider text-white"
+    >
+      <h1>Food Finder</h1>
     </header>
 
-    <section id="about-me">
-        <div class="section-detail">
-            <h2 class="section-title primary-border">About Me</h2>
-            <p>
-                Welcome  to Tony Dandino's Mock Portfolio <br /> <br />
-                I have a passion for problem solving and am stepping into the world of programming. <br /> <br />
-                I have been working in hospitality for the past 20 years and am looking to utilize these skills in coding and programming. <br /> <br />
-                In my spare time I like to spend time with my wife, watch sports, and play with my two dogs and cats. <br />
-            </p>
-          
+    <main
+      class="mx-5 flex justify-between justify-items-center max-[950px]:flex-col"
+    >
+      <div class="flex flex-col">
+        <section class="m-2 rounded bg-amber-900 p-2">
+          <form>
+            <div class="flex flex-col">
+              <label
+                for="search"
+                class="text-center text-2xl font-semibold text-white"
+                >Find Delivery Near You!</label
+              >
+              <input type="text" id="city" class="m-1 rounded bg-orange-200" />
+              <button
+                type="submit"
+                class="m-1 rounded border-2 border-solid border-black bg-amber-500 font-semibold hover:bg-yellow-600"
+              >
+                Search
+              </button>
             </div>
-        </div>
-    </section>
+          </form>
+        </section>
 
+        <section class="m-2 rounded bg-orange-200">
+          <h2 class="rounded bg-amber-800 p-1 text-center text-xl text-white">
+            Pick up where you left off
+          </h2>
+          <div id="history"></div>
+        </section>
 
-    <section id="work">
-        <div class="section-detail">
-            <h2 class="section-title primary-border">Work</h2>
-            <div class="work-container">
-                <div class="item-detail">
-                    
-                       
-                </div>
-                <div class="item-detail">
-                    
-        <p> Coming Soon </p>"
-        <br>
-            </div>
-        </div>
-    </section>
+        <section class="m-2 rounded bg-orange-200">
+          <h2
+            class="rounded bg-amber-900 p-1 text-center text-2xl font-semibold text-white"
+          >
+            Results
+          </h2>
+          <h3 class="m-1 rounded text-sm font-semibold">
+            Click on a restaurant name to visit their Yelp page, or on their
+            phone number to call them!
+          </h3>
+          <ul id="results"></ul>
+        </section>
+      </div>
 
-    <section id="contact">
-        <div class="section-detail">
-            <h2 class="section-title primary-border">Contact</h2>
-            <p>
-                397 Novara Drive
-                <br />
-                Ballwin, MO
-                <br />
-                63021
-                <br />
-                Phone: (314) 486-2099
-                <br />
-                Email: <a href="mailto: tdandino1005@gmail.com">tdandino1005@gmail.com</a>
-            </p>
-        </div>
-    </section>
-</body>
+      <section
+        class="sticky top-20 right-3 my-3 h-4/5 rounded bg-amber-500 p-3"
+      >
+        <div id="map"></div>
+      </section>
+    </main>
 
+    <script type="module" src="./src/index.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3affXF_hmdvi8EbgZmShTwHcJlX6ZhtU&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
 </html>
