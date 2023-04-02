@@ -1,7 +1,7 @@
 # Portfolio
 Module 2 Challenge
 
-![Screenshot](file:///C:/Users/Stacey%20Dandino/code/Homework/Module-2/index.html)
+![image](https://user-images.githubusercontent.com/114967217/229373121-a8b1d79b-8546-4eb6-bba1-d98843ca728f.png)
 
 ## Live Link
 
