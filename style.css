@@ -3,8 +3,9 @@ h1:hover {
 }
 :root {
     --primary-color: #283841;
-    --secondary-color: #1d73c9;
-    --tertiary-color: #3aa050;
+    --secondary-color: white afafaf;
+    --tertiary-color: #c0ebf0;
+
 }
 * {
     box-sizing: border-box;  
@@ -33,6 +34,7 @@ header h1 {
     margin: 5px 10px 5px 30px;
     font-size: 50px;
 }
+
 header nav {
     padding-top: 20px;
     margin-right: 20px;
@@ -41,20 +43,24 @@ header nav {
     display: flex;
     justify-content: flex-end;
 }
+
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
 a {
     color: var(--tertiary-color);
     text-decoration: none;
 }
+
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
+
 p {
     font-size: 24px;
     padding: 5px 35px 0 20px;
@@ -62,10 +68,12 @@ p {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .profile-pic {
     position: relative;
     margin: 12px;
 }
+
 section {
     display: flex;
     flex-direction: column;
@@ -73,12 +81,14 @@ section {
     padding: 20px;
     margin: 10px;
 }
+
 .section-detail {
     margin: 20px auto;
     padding-bottom: 50px;
     width: 100%;
     display: flex;
 }
+
 .section-title {
     font-size: 48px;
     display: inline-block;
@@ -89,22 +99,27 @@ section {
     padding: 30px;
     flex-basis: 25%;
 }
+
 .primary-border {
     border-color: var(--primary-color);
 }
+
 .work-container {
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 66%;
 }
+
 .item-detail {
     position: relative;
     margin: 12px;
     width: fit-content;
 }
+
 .item-detail:hover {
     background-color: var(--primary-color);
 }
+
 img {
     border: 5px solid var(--tertiary-color);
 }
