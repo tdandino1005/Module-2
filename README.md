@@ -1,15 +1,15 @@
 # Portfolio
 Module 2 Challenge
 
-
+![Screenshot](file:///C:/Users/Stacey%20Dandino/code/Homework/Module-2/index.html)
 
 ## Live Link
 
-
+file:///C:/Users/Stacey%20Dandino/code/Homework/Module-2/index.html
 
 ## Repository Link
 
-
+https://github.com/tdandino1005/Module-2
 
 ## Description
 
