@@ -5,7 +5,8 @@ Module 2 Challenge
 
 ## Live Link
 
-file:///C:/Users/Stacey%20Dandino/code/Homework/Module-2/index.html
+http://127.0.0.1:5500/index.html
+
 
 ## Repository Link
 
